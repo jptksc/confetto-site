@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Confetto</title>
+<meta name="description" content="Confetto collects no data. Everything stays on your Mac.">
+<link rel="icon" href="/icon.png" type="image/png">
+<style>
+  :root {
+    --ink: #131313;
+    --ink-soft: #8a8681;
+    --paper: #fdfcfa;
+    --pink: #ff4e91;
+    --orange: #ff8a00;
+    --yellow: #ffd400;
+    --teal: #00c2a8;
+    --purple: #7a5cff;
+    --blue: #2e9bff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: clamp(48px, 9vw, 96px) clamp(20px, 5vw, 48px) clamp(56px, 8vw, 88px);
+  }
+
+  .back {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    text-decoration: none;
+    margin-bottom: clamp(28px, 5vw, 44px);
+    transition: color 0.2s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .back:hover { color: var(--ink); transform: translateX(-2px); }
+  .back svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+
+  h1 {
+    font-size: clamp(36px, 6vw, 56px);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 10px;
+  }
+  .sub { color: var(--ink-soft); font-size: 15.5px; font-weight: 500; margin-bottom: clamp(30px, 5vw, 44px); }
+
+  .headline {
+    font-size: clamp(19px, 2.4vw, 22px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.4;
+    padding: 22px 26px;
+    border-radius: 16px;
+    background: linear-gradient(120deg, rgba(255, 78, 145, 0.09), rgba(255, 138, 0, 0.09) 45%, rgba(46, 155, 255, 0.09));
+    box-shadow: inset 0 0 0 1px rgba(19, 19, 19, 0.06);
+    margin-bottom: clamp(30px, 5vw, 42px);
+  }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 34px 0 10px;
+  }
+  p { font-size: 16px; margin-bottom: 14px; }
+  ul { margin: 0 0 14px 0; padding-left: 0; list-style: none; }
+  li {
+    font-size: 16px;
+    padding-left: 26px;
+    margin-bottom: 9px;
+    position: relative;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 9px;
+    width: 9px;
+    height: 9px;
+    border-radius: 2.5px;
+    transform: rotate(18deg);
+  }
+  li:nth-child(1)::before { background: var(--pink); }
+  li:nth-child(2)::before { background: var(--orange); }
+  li:nth-child(3)::before { background: var(--yellow); }
+  li:nth-child(4)::before { background: var(--teal); }
+  li:nth-child(5)::before { background: var(--purple); }
+  li:nth-child(6)::before { background: var(--blue); }
+
+  a.link { color: var(--ink); text-decoration: none; border-bottom: 1.5px solid rgba(255, 78, 145, 0.5); font-weight: 600; }
+  a.link:hover { border-bottom-color: var(--pink); }
+
+  footer {
+    margin-top: clamp(40px, 6vw, 60px);
+    padding-top: 24px;
+    border-top: 1px solid rgba(19, 19, 19, 0.08);
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <a class="back" href="/">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+    Confetto
+  </a>
+
+  <h1>Privacy Policy</h1>
+  <p class="sub">Last updated: August 3, 2026</p>
+
+  <div class="headline">Confetto collects no data. None. Not a single byte leaves your Mac.</div>
+
+  <p>We built Confetto to throw confetti, not to learn anything about you. There is no account to create, no analytics, no crash reporting, no advertising, and no third-party services of any kind.</p>
+
+  <h2>What stays on your Mac</h2>
+  <p>Your confetti presets, keyboard shortcuts, schedules, and preferences are stored locally on your device using the standard macOS preferences system. We never see them, and they are never transmitted anywhere.</p>
+
+  <h2>What the app does not do</h2>
+  <ul>
+    <li>No data collection or tracking of any kind</li>
+    <li>No network connections — the app has no internet access</li>
+    <li>No analytics, telemetry, or usage statistics</li>
+    <li>No advertising or advertising identifiers</li>
+    <li>No access to your files, camera, microphone, or contacts</li>
+    <li>No screen recording or keystroke logging</li>
+  </ul>
+
+  <h2>Sandboxing</h2>
+  <p>Confetto is distributed through the Mac App Store and runs inside Apple's App Sandbox. It requests no special permissions or entitlements beyond the sandbox itself. The confetti you see is drawn on a transparent, click-through overlay window; it captures no input and no screen content.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Confetto is suitable for all ages and, because it collects nothing at all, it collects nothing from children either.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy ever changes, the updated version will be posted on this page with a new date. Since the app collects no data, we do not anticipate meaningful changes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy, or anything else? Email <a class="link" href="mailto:hi@jason.sc">hi@jason.sc</a>.</p>
+
+  <footer>
+    © 2026 Circa75 Media, LLC · Confetto for macOS
+  </footer>
+
+</div>
+
+</body>
+</html>
