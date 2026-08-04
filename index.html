@@ -366,7 +366,7 @@
 
   <header>
     <h1 class="reveal">A tiny confetti cannon for your menu&nbsp;bar</h1>
-    <a class="dl-btn reveal d1" href="#" data-pop>
+    <a class="dl-btn reveal d1" href="https://apps.apple.com/app/id6794406717" target="_blank" rel="noopener" data-pop>
       <svg viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13.1 10.1c0-2 1.7-3 1.8-3.1-1-1.4-2.5-1.6-3-1.6-1.3-.1-2.5.8-3.2.8-.7 0-1.7-.8-2.8-.8C4.5 5.4 3.1 6.2 2.3 7.5.7 10.2 1.9 14.2 3.4 16.4c.8 1.1 1.7 2.3 2.8 2.3 1.1 0 1.6-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.9-1.2 1.2-2.4 1.2-2.5 0 0-2.8-1-2.8-3.9zM10.9 3.3c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 1.9-.5 2.5-1.2z"/></svg>
       Download for Mac
     </a>
@@ -408,7 +408,7 @@
   </section>
 
   <div class="cta">
-    <a class="dl-btn" href="#" data-pop>
+    <a class="dl-btn" href="https://apps.apple.com/app/id6794406717" target="_blank" rel="noopener" data-pop>
       <svg viewBox="0 0 16 19" fill="currentColor" aria-hidden="true"><path d="M13.1 10.1c0-2 1.7-3 1.8-3.1-1-1.4-2.5-1.6-3-1.6-1.3-.1-2.5.8-3.2.8-.7 0-1.7-.8-2.8-.8C4.5 5.4 3.1 6.2 2.3 7.5.7 10.2 1.9 14.2 3.4 16.4c.8 1.1 1.7 2.3 2.8 2.3 1.1 0 1.6-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.9-1.2 1.2-2.4 1.2-2.5 0 0-2.8-1-2.8-3.9zM10.9 3.3c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 1.9-.5 2.5-1.2z"/></svg>
       Download for Mac
     </a>
@@ -616,7 +616,10 @@
 
   document.querySelectorAll("[data-pop]").forEach(el => {
     el.addEventListener("click", e => {
-      if (el.tagName === "A") e.preventDefault();
+      /* Placeholder links stay put; real destinations are allowed through
+         (the App Store link opens in a new tab, so the burst is still seen). */
+      const href = el.getAttribute("href");
+      if (el.tagName === "A" && (!href || href === "#")) e.preventDefault();
       const r = el.getBoundingClientRect();
       burst(r.left + r.width / 2, r.top + r.height / 2, 130, "classic");
     });
